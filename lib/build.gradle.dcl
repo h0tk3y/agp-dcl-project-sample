@@ -4,12 +4,11 @@ androidLibrary {
         minSdk = 24
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
-    libraryBuildTypes {
-        debug {
+    buildTypes {
+        buildType("debug") {
             isMinifyEnabled = false
-            multiDexEnabled = true
         }
-        release {
+        buildType("release") {
             isMinifyEnabled = true
         }
     }
