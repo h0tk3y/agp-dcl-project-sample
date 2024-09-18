@@ -7,6 +7,7 @@ androidLibrary {
     libraryBuildTypes {
         debug {
             isMinifyEnabled = false
+            multiDexEnabled = true
         }
         release {
             isMinifyEnabled = true
@@ -17,6 +18,6 @@ androidLibrary {
         checkReleaseBuilds = false
     }
     dependenciesDcl {
-        testImplementation("junit:junit:4.13.2")
+        implementation("androidx.appcompat:appcompat:1.7.0")
     }
 }
